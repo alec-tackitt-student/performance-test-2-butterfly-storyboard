@@ -1,3 +1,6 @@
+body {
+ margin: 0;
+}
 #banner {
     background-image: url("../images/4.jpg");
     width: 100vw;
@@ -18,7 +21,7 @@ nav {
     display: flex;
     border: 2px solid;
     width: 100vw;
-    height: 25px;
+    height: 4vh;
     align-items: center;
     background-color: greenyellow;
 }
@@ -27,9 +30,34 @@ nav {
     padding-left: 10px;
     width: 400px;
     justify-content: space-between;
+    margin-right: 5%;
 }
 a {
    color: black; 
    text-decoration: none;
 }
+main {
+    display: flex;
+    background-color: lightgray;
+    width: 100vw;
+    height: 87vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-container {
+    width: inherit;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+article {
+    border: 5px solid;
+}
+.sm {
+    flex: 1;
+}
+.lg {
+    flex: 2;
+}
+
 
