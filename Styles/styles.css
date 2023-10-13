@@ -68,7 +68,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow-y: auto;
 }
 .card-container {
     display: flex;
@@ -84,7 +84,7 @@ main {
     flex-basis: 100%;
     flex: 1;
   }
-article {
+.article {
     border: 5px solid;
 }
 .sm {
