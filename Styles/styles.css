@@ -3,6 +3,7 @@ body {
 }
 p {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 10px;
 }
 #banner {
     background-image: url("../images/4.jpg");
@@ -56,21 +57,26 @@ a {
    color: black; 
    text-decoration: none;
 }
+img {
+    width: 100%;
+}
 main {
     display: flex;
-    background-color: lightgray;
+    background-color: white;
     width: 100vw;
     height: 75vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 .card-container {
     display: flex;
     width: inherit;
     margin-left: 2vw;
-    margin-right: 2vw;
-    
+    margin-right: 2vw; 
+    justify-content: center;
+    align-items: center;
 }
 .col{
     display: flex;
@@ -87,21 +93,26 @@ article {
     width: 20vw;
     margin-left: 1vw;
     margin-right: 1vw;
+    min-height: 411px ;
 }
 .lg {
     flex: 50%;
     height: 50vh;
     margin-left: 1vw;
     margin-right: 1vw;
+    min-height: 411px ;
 }
 #did-you-know {
     min-width: 328.5px;   
+    max-width: 380px;
 }
 #Butterflies {
-    min-width: 750px;   
+    min-width: 750px; 
+    max-width: 800px;  
 }
 #fun-facts {
     min-width: 397.5px;   
+    max-width: 407px;
 }
 #did-you-know-img {
     min-height: 50%;   
@@ -112,15 +123,38 @@ article {
 #fun-facts-img {
     min-height: 50%;  
 }
-
+.row {
+    display: flex;
+    width:fit-content;
+}
 @media screen and (max-width: 1600px) {
-    .col {
-        display: flex;
-        flex-direction: row;
+    .card-container {
+        flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        height: 125vh;
     }
     .sm {
         margin-bottom: 1vh;
+    }
+}
+@media screen and (max-width: 800px) {
+    .card-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        height: 165vh;
+    }
+    #top-row {
+        flex-direction: column;
+        
     }
 }
